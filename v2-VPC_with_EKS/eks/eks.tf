@@ -123,6 +123,7 @@ resource "aws_eks_cluster" "eks" {
 
   vpc_config {
     subnet_ids = [var.subnet_ids[0],var.subnet_ids[1]]
+
   }
   
   depends_on = [
@@ -146,7 +147,7 @@ resource "aws_eks_node_group" "backend" {
   disk_size = "20"
   instance_types = ["t2.small"]
   remote_access {
-    ec2_ssh_key = "rtp-03"
+    ec2_ssh_key = "widows-east-2-key"
     source_security_group_ids = [var.sg_ids]
   } 
   

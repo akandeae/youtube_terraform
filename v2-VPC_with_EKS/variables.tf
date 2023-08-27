@@ -1,13 +1,13 @@
 variable "location" {
-    default = "ap-south-1"
+    default = "us-east-2"
 }
 
 variable "os_name" {
-    default = "ami-09ba48996007c8b50"
+    default = "ami-024e6efaf93d85776"
 }
 
 variable "key" {
-    default = "rtp-03"
+    default = "widows-east-2-key"
 }
 
 variable "instance-type" {
@@ -22,6 +22,21 @@ variable "subnet1-cidr" {
     default = "10.10.1.0/24"
   
 }
-variable "subent_az" {
-    default =  "ap-south-1a"  
+
+variable "subnet2-cidr" {
+    default = "10.10.2.0/24"
+
 }
+
+
+variable "subent_az" {
+    default =  "us-east-2b"
+
+}
+
+
+variable "subent-2_az" {
+    default =  "us-east-2a"
+
+}
+
