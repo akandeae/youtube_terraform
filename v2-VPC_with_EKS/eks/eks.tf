@@ -119,7 +119,11 @@ resource "aws_iam_instance_profile" "worker" {
 ###############################################################################################################
 resource "aws_eks_cluster" "eks" {
   name = "ed-eks-01"
+<<<<<<< HEAD
   version = "1.24"
+=======
+  version = "1.25"
+>>>>>>> ac0b7e50fd3b1484694c4b5ed908c149b940854e
   role_arn = aws_iam_role.master.arn
 
   vpc_config {
