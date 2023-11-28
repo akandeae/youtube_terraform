@@ -1,13 +1,13 @@
 variable "location" {
-    default = "us-east-2"
+    default = "us-east-1"
 }
 
 variable "os_name" {
-    default = "ami-024e6efaf93d85776"
+    default = "ami-080632d422a0f7cc5"
 }
 
 variable "key" {
-    default = "widows-east-2-key"
+    default = "widows-east-1-key"
 }
 
 variable "instance-type" {
@@ -30,13 +30,13 @@ variable "subnet2-cidr" {
 
 
 variable "subent_az" {
-    default =  "us-east-2b"
+    default =  "us-east-1b"
 
 }
 
 
 variable "subent-2_az" {
-    default =  "us-east-2a"
+    default =  "us-east-1a"
 
 }
 
